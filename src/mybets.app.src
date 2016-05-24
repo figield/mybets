@@ -1,0 +1,22 @@
+%%-*- mode: erlang -*-
+{application, mybets,
+ [
+  {description, "mybets"},
+  {vsn, "1"},
+  {modules, []},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  inets,
+                  mnesia,
+                  crypto,
+                  mochiweb,
+                  webmachine
+                 ]},
+  {mod, { mybets_app, []}},
+  {env, [
+      {web_ip, "0.0.0.0"},
+      {web_port, 8080}
+  ]}
+ ]}.

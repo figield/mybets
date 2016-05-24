@@ -1,0 +1,11 @@
+{application,mybets,
+             [{description,"mybets"},
+              {vsn,"1"},
+              {modules,[mybets,mybets_app,mybets_bet,mybets_config,
+                        mybets_resource,mybets_schema,mybets_schema_tests,
+                        mybets_sup]},
+              {registered,[]},
+              {applications,[kernel,stdlib,inets,mnesia,crypto,mochiweb,
+                             webmachine]},
+              {mod,{mybets_app,[]}},
+              {env,[{web_ip,"0.0.0.0"},{web_port,8080}]}]}.

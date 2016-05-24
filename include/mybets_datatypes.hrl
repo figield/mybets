@@ -1,0 +1,4 @@
+-record(bet, {
+		id,
+		title
+	}).
